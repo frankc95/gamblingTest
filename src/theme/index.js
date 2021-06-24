@@ -9,7 +9,7 @@ export default {
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
     yellow: '#FFA740', // border color
-    primary: '#EA3A60', // primary button and link color
+    primary: '#20afb1', // primary button and link color
     secondary: '#2563FF', // secondary color - can be used for hover states
     muted: '#E4E4E4', // muted color
     accent: '#609', // a contrast color for emphasizing UI
@@ -99,15 +99,15 @@ export default {
       overflow: 'hidden',
     },
     testimonial: {
-      pt: [8, null, 9, null, null, 10, null, '180px'],
-      pb: ['90px', null, 9, null, null, 10, null, '180px'],
+      pt: [8, null, 9, null, 10, 10, '20px', '180px'],
+      pb: ['90px', null, 9, null, null, '20px', '20px', '20px'],
       overflow: 'hidden',
     },
     services: {
-      pb: ['90px', null, 9, null, null, 10, null, '150px'],
+      pb: ['90px', null, 9, null, null, 10, 'null', '150px'],
     },
-    pricing: {
-      pt: [8, null, 8, '70px', null, 8, null, '145px'],
+    contact: {
+      pt: [8, null, 8, '70px', '20px', '40px', null, '145px'],
       pb: ['90px', null, 9, null, null, 10, null, '190px'],
     },
   },

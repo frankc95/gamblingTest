@@ -11,24 +11,34 @@ import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
+import Employer from 'assets/services/employer.svg';
 
 const data = {
-  subTitle: 'our services',
+  subTitle: 'Our Mission',
   title: 'Freeing from the addiction takes time',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'Social Responsibility',
+      title: 'Social Responsibility',
       text:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Investing in Your Workforce',
+      title: 'Investing in Your Workforce',
+      text:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      id: 3,
+      imgSrc: Employer,
+      altText: 'Obligation As the Employer',
+      title: 'Obligation As the Employer',
+      className: 'employer',
       text:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
@@ -49,13 +59,13 @@ export default function ServiceSection() {
         <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
           <Button
-          sx={styles.videoBtn}
-          onClick={handleClick}
-          aria-label="Play Button"
+            sx={styles.videoBtn}
+            onClick={handleClick}
+            aria-label="Play Button"
           >
-          <span>
-            <IoIosPlay />
-          </span>
+            <span>
+              <IoIosPlay />
+            </span>
           </Button>
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="shape" />
@@ -77,7 +87,7 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      <ModalVideo 
+      <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="JdpxdyVqhAc"

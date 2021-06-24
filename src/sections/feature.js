@@ -12,59 +12,59 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Individual Therapy',
-    title: 'Individual Therapy',
+    altText: 'Cycle of Gambling Addiction',
+    title: 'Cycle of Gambling Addiction',
     text:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.',
+      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area This is the extended text area.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Referrals',
-    title: 'Referrals',
+    altText: 'Statistics',
+    title: 'Statistics',
     text:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.',
+      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Presentations',
-    title: 'Presentations',
+    altText: 'Recovery',
+    title: 'Recovery',
     text:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.',
+      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Workshops',
-    title: 'Workshops',
+    altText: 'Benefits',
+    title: 'Benefits',
     text:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.',
+      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area',
   },
 ];
 
 export default function Feature() {
   return (
-   <section sx={{ variant: "section.feature" }}>
-     <Container>
-       <SectionHeader 
-       slogan="Quality Features"
-       title="Amazing useful features" 
-       />
+    <section sx={{ variant: "section.feature" }}>
+      <Container>
+        <SectionHeader
+          slogan="Quality Features"
+          title="Amazing useful features"
+        />
 
-       <Grid sx={styles.grid}>
-         {data.map((item) => (
-           <FeatureCard 
-             key={item.id}
-             src={item.imgSrc}
-             alt={item.altText}
-             title={item.title}
-             text={item.text}
-           />
-         ))}
-       </Grid>
-     </Container>
-   </section>
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <FeatureCard
+              key={item.id}
+              src={item.imgSrc}
+              alt={item.altText}
+              title={item.title}
+              text={item.text}
+            />
+          ))}
+        </Grid>
+      </Container>
+    </section>
   );
 }
 

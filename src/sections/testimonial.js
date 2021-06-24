@@ -77,38 +77,38 @@ const responsive = {
 };
 
 const carouselParams = {
-  additionalTransfrom:0,
-  arrows:false,
-  autoPlaySpeed:3000,
-  centerMode:false,
-  className:"",
-  containerClass:"carousel-container",
-  customButtonGroup:<ButtonGroup />,
-  dotListClass:"",
+  additionalTransfrom: 0,
+  arrows: false,
+  autoPlaySpeed: 3000,
+  centerMode: false,
+  className: "",
+  containerClass: "carousel-container",
+  customButtonGroup: <ButtonGroup />,
+  dotListClass: "",
   draggable: true,
-  focusOnSelect:false,
-  infinite:true,
-  itemClass:"",
+  focusOnSelect: false,
+  infinite: true,
+  itemClass: "",
   keyBoardControl: true,
-  minimumTouchDrag:80,
+  minimumTouchDrag: 80,
   renderButtonGroupOutside: true,
-  renderDotsOutside:false,
-  responsive:responsive,
-  showDots:false,
-  sliderClass:"",
-  slidesToSlide:1,
+  renderDotsOutside: false,
+  responsive: responsive,
+  showDots: false,
+  sliderClass: "",
+  slidesToSlide: 1,
 }
 
 export default function TestimonialCard() {
   return (
-    <section id="testimonial" sx={{ variant: 'section.testimonial' }}>
+    <section id="testimonials" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
-        <SectionHeader 
+        <SectionHeader
           slogan="Testimonial"
           title="Meet Client Satisfaction"
         />
         <Box sx={styles.carouselWrapper}>
-          <Carousel { ...carouselParams }>
+          <Carousel {...carouselParams}>
             {data.map((item) => (
               <Box sx={styles.reviewCard} key={item.id}>
                 <Rating rating={item.review} />
@@ -116,7 +116,7 @@ export default function TestimonialCard() {
                 <Text sx={styles.description}>{item.description}</Text>
                 <div className="card-footer">
                   <div className="image">
-                    <Image src={item.avatar} alt="Client Image"/>
+                    <Image src={item.avatar} alt="Client Image" />
                     <div className="social-wrapper">
                       <Heading as="h4" sx={styles.heading}>{item.name}</Heading>
                       <Text sx={styles.designation}>{item.designation}</Text>
@@ -152,7 +152,7 @@ const styles = {
         null,
         'calc(50% + 865px)',
       ],
-      mr: ['auto', null, null, null, null, null, null, '-220px'],
+      mr: ['auto', null, null, null, null, null, null, 'null'],
       ml: 'auto',
       '.react-multi-carousel-item': {
         transition: 'all 0.25s',
@@ -213,48 +213,49 @@ const styles = {
       },
     },
     '.card-footer': {
-    display: 'flex',
-    alignItems: 'center',
-    marginTop: [5, null, null, '33px'],
-    '.image': {
-      flexShrink: 0,
-      mr: [3, null, null, 4],
       display: 'flex',
-      img: {
-        width: '55px',
-        height: '55px',
-        borderRadius: '50%',
-        objectFit: 'cover',
+      alignItems: 'center',
+      marginTop: [5, null, null, '33px'],
+      '.image': {
+        flexShrink: 0,
+        mr: [3, null, null, 4],
+        display: 'flex',
+        img: {
+          width: '55px',
+          height: '55px',
+          borderRadius: '50%',
+          objectFit: 'cover',
+        },
       },
     },
-  },
-  '.social-wrapper': {
-    marginLeft: '10px',
-  },
-  title: {
-    fontSize: [1, 2],
-    fontWeight: 700,
-    mb: [3, null, null, '22px'],
-    color: 'text',
-    lineHeight: 1.6,
-  },
-  description: {
-    fontSize: [1, null, null, 2],
-    fontWeight: 'normal',
-    color: 'text',
-    lineHeight: [1.85, null, 2],
-  },
-  heading: {
-    fontSize: [1, null, null, 2],
-    fontWeight: 700,
-    mb: '3px',
-    color: 'text',
-    lineHeight: 1.3,
-  },
-  designation: {
-    color: 'primary',
-    fontWeight: '500',
-    fontSize: 1,
-    lineHeight: 1.4,
-  },
-}};
+    '.social-wrapper': {
+      marginLeft: '10px',
+    },
+    title: {
+      fontSize: [1, 2],
+      fontWeight: 700,
+      mb: [3, null, null, '22px'],
+      color: 'text',
+      lineHeight: 1.6,
+    },
+    description: {
+      fontSize: [1, null, null, 2],
+      fontWeight: 'normal',
+      color: 'text',
+      lineHeight: [1.85, null, 2],
+    },
+    heading: {
+      fontSize: [1, null, null, 2],
+      fontWeight: 700,
+      mb: '3px',
+      color: 'text',
+      lineHeight: 1.3,
+    },
+    designation: {
+      color: 'primary',
+      fontWeight: '500',
+      fontSize: 1,
+      lineHeight: 1.4,
+    },
+  }
+};

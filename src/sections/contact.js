@@ -13,11 +13,11 @@ export default function Contact() {
 
 
   return (
-    <section id="contact" sx={{ variant: "section.pricing" }}>
+    <section id="contact" sx={{ variant: "section.contact" }}>
       <Container>
-        <SectionHeader 
-          slogan="Pricing Plan"
-          title="Choose your Pricing Plan"
+        <SectionHeader
+          slogan="Have any questions?"
+          title="Get in touch with us!"
         />
         <Box sx={styles.buttonGroup}>
           <Box as="form" sx={styles.forms} onSubmit={(e) => e.preventDefault()}>

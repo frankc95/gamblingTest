@@ -67,16 +67,16 @@ const data = [
 
 export default function TeamSection() {
   return (
-    <section sx={styles.team}>
+    <section id="our-team" sx={styles.team}>
       <Container>
         <SectionHeader
-        slogan="our team"
-        title="The most qualified and talented individuals"
+          slogan="our team"
+          title="The most qualified and talented individuals"
         />
 
         <Grid sx={styles.grid}>
           {data.map((item) => (
-            <TeamCard 
+            <TeamCard
               key={item.id}
               src={item.imgSrc}
               alt={item.altText}

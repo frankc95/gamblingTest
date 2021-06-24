@@ -12,58 +12,58 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Individual Therapy',
-    title: 'Individual Therapy',
+    altText: 'Cycle of Gambling Addiction',
+    title: 'Cycle of Gambling Addiction',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+      'This is the short text area. This is the short text area. This is the short text area.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Referrals',
-    title: 'Referrals',
+    altText: 'Statistics',
+    title: 'Statistics',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+      'This is the short text area. This is the short text area. This is the short text area.',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Presentations',
-    title: 'Presentations',
+    altText: 'Recovery',
+    title: 'Recovery',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+      'This is the short text area. This is the short text area. This is the short text area.',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Workshops',
-    title: 'Workshops',
+    altText: 'Benefits',
+    title: 'Benefits',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+      'This is the short text area. This is the short text area. This is the short text area.',
   },
 ];
 
 export default function KeyFeature() {
   return (
-   <section sx={{ variant: "section.keyFeature" }} id="feature">
-    <Container>
-      <SectionHeader 
-        slogan="What's the function"
-        title="Meet the feature of our product"
-      />
-      <Grid sx={styles.grid}>
-        {data.map((item) => (
-          <FeatureCardColumn 
-            key={item.id}
-            src={item.imgSrc}
-            alt={item.altText}
-            title={item.title}
-            text={item.text}
-          />
-        ))}
-      </Grid>
-    </Container>
-   </section>
+    <section id="our-mission" sx={{ variant: "section.keyFeature" }}>
+      <Container>
+        <SectionHeader
+          slogan="Asking why?"
+          title="Because, what benefits you, benefits them!"
+        />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <FeatureCardColumn
+              key={item.id}
+              src={item.imgSrc}
+              alt={item.altText}
+              title={item.title}
+              text={item.text}
+            />
+          ))}
+        </Grid>
+      </Container>
+    </section>
   );
 }
 

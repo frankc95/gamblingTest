@@ -18,18 +18,18 @@ import TestimonialCard from '../sections/testimonial';
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
-        <Layout>
-          <SEO title="Gambling" />
-          <Banner />
-          <KeyFeature />
-          <ServiceSection />
-          <Feature />
-          <CoreFeature />
-          <WorkFlow />
-          <TeamSection />
-          <TestimonialCard />
-          <Contact />
-        </Layout>
+      <Layout>
+        <SEO title="John Hartson Gambling Workshop" />
+        <Banner />
+        <KeyFeature />
+        <ServiceSection />
+        <Feature />
+        {/* <CoreFeature /> */}
+        <WorkFlow />
+        <TeamSection />
+        <TestimonialCard />
+        <Contact />
+      </Layout>
     </ThemeProvider>
   );
 }

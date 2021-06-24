@@ -4,12 +4,16 @@ export default [
     label: 'Home',
   },
   {
-    path: 'feature',
-    label: 'Features',
+    path: 'our-mission',
+    label: 'Our Mission',
   },
   {
-    path: 'testimonial',
-    label: 'Testimonial',
+    path: 'our-team',
+    label: 'Our Team',
+  },
+  {
+    path: 'testimonials',
+    label: 'Testimonials',
   },
   {
     path: 'contact',
