@@ -91,7 +91,7 @@ const styles = {
         position: 'relative',
         height: [245, 'auto'],
         borderRadius: '10px',
-        maxWidth: '70vw'
+        maxWidth: ['100vw', '100vw', '70vw', '70vw', '70vw',]
       },
     },
   },
