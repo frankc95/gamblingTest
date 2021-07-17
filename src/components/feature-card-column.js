@@ -23,13 +23,13 @@ const styles = {
     display: 'grid',
     gridTemplateColumns: [
       'repeat(1,1fr)',
-      null,
+      'repeat(1,1fr)',
       'repeat(2,1fr)',
       null,
       'repeat(2,1fr)',
     ],
     '&:nth-of-type(even) img': {
-      order: 1,
+      order: [0, 0, 1, 1, 1, 1],
     },
     m: '0 auto',
     alignItems: 'center',
