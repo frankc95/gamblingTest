@@ -3,43 +3,60 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
-import Performance from 'assets/feature/performance.svg';
-import Partnership from 'assets/feature/partnership.svg';
-import Subscription from 'assets/feature/subscription.svg';
-import Support from 'assets/feature/support.svg';
+import Question from 'assets/feature/question.png';
+// import Performance from 'assets/feature/performance.svg';
+// import Partnership from 'assets/feature/partnership.svg';
+// import Subscription from 'assets/feature/subscription.svg';
+// import Support from 'assets/feature/support.svg';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
-    altText: 'Cycle of Gambling Addiction',
-    title: 'Cycle of Gambling Addiction',
+    imgSrc: Question,
+    altText: 'Think',
+    title: 'Think',
     text:
-      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area This is the extended text area.',
+      'Think about gambling a great deal of your time? Does it consume your thoughts; does it affect your daily plans?',
   },
   {
     id: 2,
-    imgSrc: Partnership,
-    altText: 'Statistics',
-    title: 'Statistics',
+    imgSrc: Question,
+    altText: 'Lie',
+    title: 'Lie',
     text:
-      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area',
+      'Lie about your gambling to others? Do you find yourself denying you have a problem, or where you have been/how much you have spent?',
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: 'Recovery',
-    title: 'Recovery',
+    imgSrc: Question,
+    altText: 'Gamble',
+    title: 'Gamble',
     text:
-      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area',
+      'Gamble while bills go unpaid, ignoring final demands etc. Prioritise gambling over normal daily expenditure.',
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: 'Benefits',
-    title: 'Benefits',
+    imgSrc: Question,
+    altText: 'Borrow',
+    title: 'Borrow',
     text:
-      'This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area. This is the extended text area',
+      'Borrow money to finance your gambling, perhaps from friends, credit cards, loans or even through illegal means?',
+  },
+  {
+    id: 5,
+    imgSrc: Question,
+    altText: 'Miss',
+    title: 'Miss',
+    text:
+      'Miss work because of your gambling?',
+  },
+  {
+    id: 6,
+    imgSrc: Question,
+    altText: 'Affect',
+    title: 'Affect',
+    text:
+      'Is it affecting your health? Do you have trouble sleeping; feel anxious, depressed or even suicidal after you gamble but still continue?',
   },
 ];
 
@@ -48,8 +65,8 @@ export default function Feature() {
     <section sx={{ variant: "section.feature" }}>
       <Container>
         <SectionHeader
-          slogan="Quality Features"
-          title="Amazing useful features"
+          slogan="Gambling Addiction"
+          title="Is gambling a problem for me?"
         />
 
         <Grid sx={styles.grid}>

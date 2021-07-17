@@ -20,9 +20,19 @@ export default function FeatureCardColumn({
 
 const styles = {
   card: {
-    display: 'flex',
-    alignItems: ['center', 'flex-start'],
-    flexDirection: 'column',
+    display: 'grid',
+    gridTemplateColumns: [
+      'repeat(1,1fr)',
+      null,
+      'repeat(2,1fr)',
+      null,
+      'repeat(2,1fr)',
+    ],
+    '&:nth-of-type(even) img': {
+      order: 1,
+    },
+    m: '0 auto',
+    alignItems: 'center',
     mb: -1,
     textAlign: ['center', null, 'left'],
     px: [4, null, 0],
@@ -31,14 +41,17 @@ const styles = {
     mx: ['auto', null, 0],
     ml: ['auto', null, '-13px'],
     mb: -2,
-    width: ['80px', null, null, '90px', null, 'auto'],
+    order: 0,
+    width: ['auto', null, null, 'auto', null, 'auto'],
+    m: '0 auto',
   },
   wrapper: {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'space-around',
     title: {
-      fontSize: 3,
+      fontSize: 10,
       color: 'heading_secondary',
       lineHeight: 1.4,
       fontWeight: 700,

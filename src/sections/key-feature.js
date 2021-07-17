@@ -3,43 +3,34 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
-import Support from 'assets/key-feature/support.svg';
+import Performance from 'assets/key-feature/undraw_Resume_re_hkth.png';
+import Partnership from 'assets/key-feature/undraw_Business_plan_re_0v81.png';
+import Subscription from 'assets/key-feature/undraw_Mention_re_k5xc.png';
 
 const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Cycle of Gambling Addiction',
-    title: 'Cycle of Gambling Addiction',
+    altText: 'Background',
+    title: 'Background',
     text:
-      'This is the short text area. This is the short text area. This is the short text area.',
+      'John Hartson, as well as being a renowned world-famous footballer, is a recovering gambling addict. He has teamed up with with Tony Marini, a Psychotherapist and expert in gambling addiction (and also are covering gambling addict himself(, to share their stories, help people recognise the problem (either within themselves or within their families or friends) and provide an avenue for those struggling with gambling to seek help and gain recovery.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Statistics',
-    title: 'Statistics',
+    altText: 'Our Plan',
+    title: 'Our Plan',
     text:
-      'This is the short text area. This is the short text area. This is the short text area.',
+      'John and Tony are planning a series of in-house workshops, aimed at reaching out to the community, to recognise the traits and pitfalls of problem gambling, the damage it can cause, and the light at the end of the tunnel. It is hoped that companies, large or small, sports associations and clubs, and other groups that could benefit from hearing personal stories and education material will be interested in hosting their Workshops. These can be tailored to suit the audience as appropriate.',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Recovery',
-    title: 'Recovery',
+    altText: 'Know More',
+    title: 'Know More',
     text:
-      'This is the short text area. This is the short text area. This is the short text area.',
-  },
-  {
-    id: 4,
-    imgSrc: Support,
-    altText: 'Benefits',
-    title: 'Benefits',
-    text:
-      'This is the short text area. This is the short text area. This is the short text area.',
+      'Please follow the links to read more information on John and Tony themselves. If you are interested in hosting a workshop, you can contact them via the email address on our contact page for details of costs etc.',
   },
 ];
 
@@ -83,9 +74,9 @@ const styles = {
     gridTemplateColumns: [
       'repeat(1,1fr)',
       null,
-      'repeat(2,1fr)',
+      'repeat(1,1fr)',
       null,
-      'repeat(4,1fr)',
+      'repeat(1,1fr)',
     ],
   },
 };

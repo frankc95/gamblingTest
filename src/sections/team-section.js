@@ -3,7 +3,7 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import TeamCard from 'components/team-card';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGlobe, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 import Member1 from 'assets/service--thumb.png';
 import Member2 from 'assets/team/member--1.png';
@@ -18,21 +18,15 @@ const data = [
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/tony-marini-31487867/',
+        icon: <FaLinkedin />,
       },
       {
         id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
+        name: 'website',
+        path: 'https://www.anthonymarini.co.uk/',
+        icon: <FaGlobe />,
       },
     ],
   },
@@ -45,21 +39,21 @@ const data = [
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
+        name: 'instagram',
+        path: 'https://www.instagram.com/johnhartson10/?hl=en',
+        icon: <FaInstagram />,
       },
       {
         id: 2,
         name: 'twitter',
-        path: '#',
+        path: 'https://twitter.com/johnhartson10',
         icon: <FaTwitter />,
       },
       {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
+        id: 2,
+        name: 'website',
+        path: 'https://www.johnhartsonfoundation.co.uk/',
+        icon: <FaGlobe />,
       },
     ],
   },
@@ -97,9 +91,11 @@ const styles = {
   },
   grid: {
     mt: [0, null, -6, null, -4],
-    gridGap: ['35px 0px', null, 0, null, null, '30px 35px'],
+    gridGap: ['35px 0px', null, 0, null, null, '0px 0px'],
+    maxWidth: '800px',
+    m: '0 auto',
     gridTemplateColumns: [
-      'repeat(2,1fr)',
+      'repeat(1,1fr)',
       null,
       'repeat(2,1fr)',
       null,

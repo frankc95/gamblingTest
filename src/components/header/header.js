@@ -27,7 +27,8 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-          <Link 
+        <div className='btn__wrap'>
+        <Link 
           to='contact'
           spy={true}
           smooth={true}
@@ -37,6 +38,7 @@ export default function Header({ className }) {
             <Button className='donate__btn' variant='secondary' aria-label='Get In Touch'>Get In Touch</Button>
           </Link>
           <MobileDrawer/>
+          </div>
         </Container>
       </header>
   );
@@ -67,10 +69,15 @@ const styles = {
     backgroundColor: 'transparent',
     transition: 'all 0.4s ease',
     animation: `${positionAnim} 0.4s ease`,
+    '.btn__wrap': {
+      display: 'flex',
+      alignItems: 'center'
+    },
     '.donate__btn': {
       flexShrink: 0,
       mr: [15, 20, null, null, 0],
       ml: ['auto', null, null, null, 0],
+      p: [2, null, null, null, 3]
     },
     '&.sticky': {
       position: 'fixed',
@@ -80,6 +87,10 @@ const styles = {
       py: 3,
       'nev > a': {
         color: 'text',
+      },
+      a: {
+        display: 'inline-flex',
+        flexWrap: 'nowrap'
       },
     },
   },
@@ -101,6 +112,7 @@ const styles = {
       cursor: 'pointer',
       lineHeight: '1.2',
       transition: 'all 0.15s',
+      display: 'none',
       '&:hover': {
         color: 'primary',
       },
