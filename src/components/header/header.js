@@ -119,6 +119,9 @@ const styles = {
       '&.active': {
         color: 'primary',
       },
+      '& img': {
+        maxWidth: '100px'
+      },
     },
   },
 };

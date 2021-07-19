@@ -10,27 +10,27 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: "Gambling Is Not A Hobby Anymore",
+    title: "Gambling isn't a hobby anymore",
     text:
-      'Our experienced therapists will design a programme best suited to each individual, using various techniques.',
+      'There are various methods that can be used to help with the abstinence of problem gambling such as Cognitive Behaviour Therapy (CBT) or Counselling.',
   },
   {
     id: 2,
-    title: 'Gambling Is Not A Hobby Anymore',
+    title: 'Recognise that help is needed',
     text:
-      'Our experienced therapists will design a programme best suited to each individual, using various techniques.',
+      'Gamblers Anonymous, Counsellors/Therapists, Cognitive Behaviour Therapy (CBT) based professional treatment and self-help CBT models such as SMART Recovery.',
   },
   {
     id: 3,
-    title: 'Gambling Is Not A Hobby Anymore',
+    title: 'Correlation between gambling and substances?',
     text:
-      'Our experienced therapists will design a programme best suited to each individual, using various techniques.',
+      'Studies show a correlation between alcohol, nicotine and other drugs, as well as gambling. Problematic gambling can lead to more destructive actions such as criminal behaviour.',
   },
   {
     id: 4,
-    title: 'Gambling Is Not A Hobby Anymore',
+    title: 'So, what is Recovery?',
     text:
-      'Our experienced therapists will design a programme best suited to each individual, using various techniques.',
+      'A normal way of thinking and living, a healthy balance in your life. Right methods and systematic work can be very helpful in gaining independence from addictions, including problem gambling.',
   },
 ];
 
@@ -39,8 +39,8 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader 
-          slogan="WHAT'S THE FLOW"
-          title="Meet the feature you"
+          slogan="GAMBLING ADDICTION"
+          title="How do I stop my problem gambling?"
           isWhite={true}
         />
         <Grid sx={styles.grid}>

@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
+import { Container, Grid, Button } from 'theme-ui';
+import { Link } from 'react-scroll';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
 import Performance from 'assets/key-feature/undraw_Resume_re_hkth.png';
@@ -52,6 +53,17 @@ export default function KeyFeature() {
               text={item.text}
             />
           ))}
+          <Button variant="primary">
+            <Link
+              activeClass="active"
+              to={'contact'}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            > Make Positive Change
+            </Link>
+          </Button>
         </Grid>
       </Container>
     </section>
@@ -78,5 +90,9 @@ const styles = {
       null,
       'repeat(1,1fr)',
     ],
+    '& button': {
+      maxWidth: '300px',
+      justifySelf: ['center', 'center', 'center']
+    },
   },
 };

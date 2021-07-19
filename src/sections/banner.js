@@ -17,17 +17,6 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             Providing Expertise and Support to Businesses in All Areas of Gambling Addiction.
           </Text>
-          <Button variant="primary">
-            <Link
-              activeClass="active"
-              to={'contact'}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            > Make Positive Change
-            </Link>
-          </Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
