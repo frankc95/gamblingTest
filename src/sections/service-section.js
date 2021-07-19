@@ -23,25 +23,25 @@ const data = {
       altText: 'Social Responsibility',
       title: 'Social Responsibility',
       text:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'There are various methods that can be used to help with the abstinence of problem gambling such as self-help groups like Gamblers Anonymous, Counsellors/Therapists, Cognitive Behaviour Therapy (CBT) based professional treatment and self-help CBT models such as SMART Recovery. These can very helpful for gaining independence from addictions, including problem gambling. SMART Recovery is an alternative to Gamblers Anonymous (GA) as well as other 12-step programs. However, in order for any of these to work, it is necessary to recognise that there is a problem and that help is needed.',
     },
-    {
-      id: 2,
-      imgSrc: Secure,
-      altText: 'Investing in Your Workforce',
-      title: 'Investing in Your Workforce',
-      text:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      id: 3,
-      imgSrc: Employer,
-      altText: 'Obligation As the Employer',
-      title: 'Obligation As the Employer',
-      className: 'employer',
-      text:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
+    // {
+    //   id: 2,
+    //   imgSrc: Secure,
+    //   altText: 'Investing in Your Workforce',
+    //   title: 'Investing in Your Workforce',
+    //   text:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    // },
+    // {
+    //   id: 3,
+    //   imgSrc: Employer,
+    //   altText: 'Obligation As the Employer',
+    //   title: 'Obligation As the Employer',
+    //   className: 'employer',
+    //   text:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    // },
   ],
 };
 
@@ -77,9 +77,9 @@ export default function ServiceSection() {
           <Grid sx={styles.grid}>
             {data.features.map((feature) => (
               <Box sx={styles.card} key={feature.id}>
-                <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon} />
+                {/* <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon} /> */}
                 <Box sx={styles.wrapper}>
-                  <Heading sx={styles.wrapper.title}>{feature.title}</Heading>
+                  {/* <Heading sx={styles.wrapper.title}>{feature.title}</Heading> */}
                   <Text sx={styles.wrapper.subTitle}>{feature.text}</Text>
                 </Box>
               </Box>
