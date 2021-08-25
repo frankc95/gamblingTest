@@ -3,7 +3,7 @@ import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
+import LogoDark from 'assets/logo2.svg';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
@@ -98,6 +98,9 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    '& img': {
+      width: '200px'
+    },
   },
   nav: {
     mx: 'auto',
