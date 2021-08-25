@@ -1,6 +1,5 @@
 {
-  "name": "landing-page",
-  "version": "0.0.1",
+  "name": "gambling",
   "private": true,
   "scripts": {
     "dev": "next dev",
